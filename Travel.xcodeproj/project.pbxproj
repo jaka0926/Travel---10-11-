@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE5623EE2C061A9B004054EA /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */; };
+		CE5623EF2C061A9B004054EA /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */; };
 		CE7A0C0E2C05BB120034C8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C0D2C05BB120034C8C4 /* AppDelegate.swift */; };
 		CE7A0C102C05BB120034C8C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C0F2C05BB120034C8C4 /* SceneDelegate.swift */; };
 		CE7A0C122C05BB120034C8C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C112C05BB120034C8C4 /* ViewController.swift */; };
 		CE7A0C152C05BB120034C8C4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE7A0C142C05BB120034C8C4 /* Base */; };
 		CE7A0C172C05BB130034C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7A0C162C05BB130034C8C4 /* Assets.xcassets */; };
 		CE7A0C1A2C05BB130034C8C4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CE7A0C192C05BB130034C8C4 /* Base */; };
+		CE7A0C232C05BC520034C8C4 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7A0C222C05BC520034C8C4 /* SampleTableViewCell.xib */; };
+		CE7A0C242C05BC520034C8C4 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */; };
+		CE7A0C262C05BF760034C8C4 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C252C05BF760034C8C4 /* TravelModel.swift */; };
+		CE7A0C292C05E2EF0034C8C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE7A0C282C05E2EF0034C8C4 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
+		CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdTableViewCell.xib; sourceTree = "<group>"; };
 		CE7A0C0A2C05BB120034C8C4 /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A0C0D2C05BB120034C8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7A0C0F2C05BB120034C8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,9 @@
 		CE7A0C162C05BB130034C8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7A0C192C05BB130034C8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7A0C1B2C05BB130034C8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		CE7A0C222C05BC520034C8C4 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		CE7A0C252C05BF760034C8C4 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7A0C292C05E2EF0034C8C4 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +68,7 @@
 		CE7A0C0C2C05BB120034C8C4 /* Travel */ = {
 			isa = PBXGroup;
 			children = (
+				CE7A0C252C05BF760034C8C4 /* TravelModel.swift */,
 				CE7A0C0D2C05BB120034C8C4 /* AppDelegate.swift */,
 				CE7A0C0F2C05BB120034C8C4 /* SceneDelegate.swift */,
 				CE7A0C112C05BB120034C8C4 /* ViewController.swift */,
@@ -63,6 +76,10 @@
 				CE7A0C162C05BB130034C8C4 /* Assets.xcassets */,
 				CE7A0C182C05BB130034C8C4 /* LaunchScreen.storyboard */,
 				CE7A0C1B2C05BB130034C8C4 /* Info.plist */,
+				CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */,
+				CE7A0C222C05BC520034C8C4 /* SampleTableViewCell.xib */,
+				CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */,
+				CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */,
 			);
 			path = Travel;
 			sourceTree = "<group>";
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = Travel;
+			packageProductDependencies = (
+				CE7A0C282C05E2EF0034C8C4 /* Kingfisher */,
+			);
 			productName = Travel;
 			productReference = CE7A0C0A2C05BB120034C8C4 /* Travel.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = CE7A0C012C05BB120034C8C4;
+			packageReferences = (
+				CE7A0C272C05E2EF0034C8C4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CE7A0C0B2C05BB120034C8C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5623EF2C061A9B004054EA /* AdTableViewCell.xib in Resources */,
 				CE7A0C172C05BB130034C8C4 /* Assets.xcassets in Resources */,
+				CE7A0C232C05BC520034C8C4 /* SampleTableViewCell.xib in Resources */,
 				CE7A0C1A2C05BB130034C8C4 /* Base in Resources */,
 				CE7A0C152C05BB120034C8C4 /* Base in Resources */,
 			);
@@ -138,7 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5623EE2C061A9B004054EA /* AdTableViewCell.swift in Sources */,
 				CE7A0C122C05BB120034C8C4 /* ViewController.swift in Sources */,
+				CE7A0C242C05BC520034C8C4 /* SampleTableViewCell.swift in Sources */,
+				CE7A0C262C05BF760034C8C4 /* TravelModel.swift in Sources */,
 				CE7A0C0E2C05BB120034C8C4 /* AppDelegate.swift in Sources */,
 				CE7A0C102C05BB120034C8C4 /* SceneDelegate.swift in Sources */,
 			);
@@ -363,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE7A0C272C05E2EF0034C8C4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE7A0C282C05E2EF0034C8C4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7A0C272C05E2EF0034C8C4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE7A0C022C05BB120034C8C4 /* Project object */;
 }
