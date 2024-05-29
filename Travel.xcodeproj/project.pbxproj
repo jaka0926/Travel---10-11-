@@ -19,6 +19,8 @@
 		CE7A0C242C05BC520034C8C4 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */; };
 		CE7A0C262C05BF760034C8C4 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C252C05BF760034C8C4 /* TravelModel.swift */; };
 		CE7A0C292C05E2EF0034C8C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE7A0C282C05E2EF0034C8C4 /* Kingfisher */; };
+		CEEACF6B2C070551007F0700 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF6A2C070551007F0700 /* DetailViewController.swift */; };
+		CEEACF6D2C0707A6007F0700 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF6C2C0707A6007F0700 /* AdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
 		CE7A0C222C05BC520034C8C4 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
 		CE7A0C252C05BF760034C8C4 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		CEEACF6A2C070551007F0700 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CEEACF6C2C0707A6007F0700 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 		CE7A0C0C2C05BB120034C8C4 /* Travel */ = {
 			isa = PBXGroup;
 			children = (
+				CEEACF692C070500007F0700 /* adTableView */,
+				CEEACF682C0704DF007F0700 /* SampleTable */,
 				CE7A0C252C05BF760034C8C4 /* TravelModel.swift */,
 				CE7A0C0D2C05BB120034C8C4 /* AppDelegate.swift */,
 				CE7A0C0F2C05BB120034C8C4 /* SceneDelegate.swift */,
@@ -76,12 +82,28 @@
 				CE7A0C162C05BB130034C8C4 /* Assets.xcassets */,
 				CE7A0C182C05BB130034C8C4 /* LaunchScreen.storyboard */,
 				CE7A0C1B2C05BB130034C8C4 /* Info.plist */,
-				CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */,
-				CE7A0C222C05BC520034C8C4 /* SampleTableViewCell.xib */,
-				CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */,
-				CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */,
 			);
 			path = Travel;
+			sourceTree = "<group>";
+		};
+		CEEACF682C0704DF007F0700 /* SampleTable */ = {
+			isa = PBXGroup;
+			children = (
+				CE7A0C212C05BC520034C8C4 /* SampleTableViewCell.swift */,
+				CE7A0C222C05BC520034C8C4 /* SampleTableViewCell.xib */,
+				CEEACF6A2C070551007F0700 /* DetailViewController.swift */,
+			);
+			path = SampleTable;
+			sourceTree = "<group>";
+		};
+		CEEACF692C070500007F0700 /* adTableView */ = {
+			isa = PBXGroup;
+			children = (
+				CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */,
+				CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */,
+				CEEACF6C2C0707A6007F0700 /* AdViewController.swift */,
+			);
+			path = adTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +190,9 @@
 				CE7A0C242C05BC520034C8C4 /* SampleTableViewCell.swift in Sources */,
 				CE7A0C262C05BF760034C8C4 /* TravelModel.swift in Sources */,
 				CE7A0C0E2C05BB120034C8C4 /* AppDelegate.swift in Sources */,
+				CEEACF6D2C0707A6007F0700 /* AdViewController.swift in Sources */,
 				CE7A0C102C05BB120034C8C4 /* SceneDelegate.swift in Sources */,
+				CEEACF6B2C070551007F0700 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

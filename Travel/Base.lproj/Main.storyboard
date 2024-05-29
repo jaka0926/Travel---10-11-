@@ -34,6 +34,89 @@
             </objects>
             <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="zEj-TW-SXq">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="NCZ-mA-uOF" customClass="DetailViewController" customModule="Travel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uiq-4f-D0D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Wp-Fhy">
+                                <rect key="frame" x="175.66666666666666" y="375.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ8-sZ-laP">
+                                <rect key="frame" x="159" y="84" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButtonClicked:" destination="lKO-t8-ira" eventType="touchUpInside" id="K1E-Jt-hgv"/>
+                                    <action selector="popButtonClicked:" destination="NCZ-mA-uOF" eventType="touchUpInside" id="Qse-Rm-XBX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XfY-ju-HGG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Sx-Wp-Fhy" firstAttribute="centerY" secondItem="Uiq-4f-D0D" secondAttribute="centerY" constant="-40" id="0Xx-a7-Cca"/>
+                            <constraint firstItem="sQ8-sZ-laP" firstAttribute="centerX" secondItem="Uiq-4f-D0D" secondAttribute="centerX" id="Wjn-hg-5dK"/>
+                            <constraint firstItem="0Sx-Wp-Fhy" firstAttribute="centerX" secondItem="Uiq-4f-D0D" secondAttribute="centerX" id="ZYA-lN-n7a"/>
+                            <constraint firstItem="sQ8-sZ-laP" firstAttribute="top" secondItem="XfY-ju-HGG" secondAttribute="top" constant="25" id="pcK-Us-aXy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popButton" destination="sQ8-sZ-laP" id="tT6-d0-pGW"/>
+                        <outlet property="titleLabel" destination="0Sx-Wp-Fhy" id="cV9-Az-5a0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hck-Ft-dkh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192" y="-358"/>
+        </scene>
+        <!--Ad View Controller-->
+        <scene sceneID="hIl-Ki-mZa">
+            <objects>
+                <viewController storyboardIdentifier="AdViewController" id="lKO-t8-ira" customClass="AdViewController" customModule="Travel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mx4-WS-Cjc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4da-A1-eae">
+                                <rect key="frame" x="175.66666666666666" y="375.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPY-BR-0iX">
+                                <rect key="frame" x="159" y="84" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="dismissButtonClicked:" destination="lKO-t8-ira" eventType="touchUpInside" id="U4M-Hj-gYS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Y1-Ad-HxR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YPY-BR-0iX" firstAttribute="centerX" secondItem="mx4-WS-Cjc" secondAttribute="centerX" id="0rO-ql-98P"/>
+                            <constraint firstItem="4da-A1-eae" firstAttribute="centerY" secondItem="mx4-WS-Cjc" secondAttribute="centerY" constant="-40" id="7kQ-4k-Soc"/>
+                            <constraint firstItem="YPY-BR-0iX" firstAttribute="top" secondItem="7Y1-Ad-HxR" secondAttribute="top" constant="25" id="SBq-Px-sUq"/>
+                            <constraint firstItem="4da-A1-eae" firstAttribute="centerX" secondItem="mx4-WS-Cjc" secondAttribute="centerX" id="yZD-Ta-yiM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="YPY-BR-0iX" id="gVm-i9-VR5"/>
+                        <outlet property="titleLabel" destination="4da-A1-eae" id="jea-2o-uaw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZX-iU-2dT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2191.6030534351144" y="374.64788732394368"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="SYk-7Z-OXQ">
             <objects>

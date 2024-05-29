@@ -67,5 +67,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = list[indexPath.row]
+        
+        if data.ad == false {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        else {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
+            present(vc, animated: true)
+        }
+        
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
     
 }
