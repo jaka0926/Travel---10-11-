@@ -21,6 +21,10 @@
 		CE7A0C292C05E2EF0034C8C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE7A0C282C05E2EF0034C8C4 /* Kingfisher */; };
 		CEEACF6B2C070551007F0700 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF6A2C070551007F0700 /* DetailViewController.swift */; };
 		CEEACF6D2C0707A6007F0700 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF6C2C0707A6007F0700 /* AdViewController.swift */; };
+		CEEACF912C0714D0007F0700 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF902C0714D0007F0700 /* RestaurantViewController.swift */; };
+		CEEACF932C0716A7007F0700 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF922C0716A7007F0700 /* Restaurant.swift */; };
+		CEEACF972C0717D9007F0700 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEACF952C0717D9007F0700 /* RestaurantTableViewCell.swift */; };
+		CEEACF982C0717D9007F0700 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEACF962C0717D9007F0700 /* RestaurantTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		CE7A0C252C05BF760034C8C4 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 		CEEACF6A2C070551007F0700 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CEEACF6C2C0707A6007F0700 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		CEEACF902C0714D0007F0700 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		CEEACF922C0716A7007F0700 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		CEEACF952C0717D9007F0700 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		CEEACF962C0717D9007F0700 /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 				CE7A0C162C05BB130034C8C4 /* Assets.xcassets */,
 				CE7A0C182C05BB130034C8C4 /* LaunchScreen.storyboard */,
 				CE7A0C1B2C05BB130034C8C4 /* Info.plist */,
+				CEEACF942C0716AF007F0700 /* Restaurant */,
 			);
 			path = Travel;
 			sourceTree = "<group>";
@@ -104,6 +113,17 @@
 				CEEACF6C2C0707A6007F0700 /* AdViewController.swift */,
 			);
 			path = adTableView;
+			sourceTree = "<group>";
+		};
+		CEEACF942C0716AF007F0700 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				CEEACF922C0716A7007F0700 /* Restaurant.swift */,
+				CEEACF902C0714D0007F0700 /* RestaurantViewController.swift */,
+				CEEACF952C0717D9007F0700 /* RestaurantTableViewCell.swift */,
+				CEEACF962C0717D9007F0700 /* RestaurantTableViewCell.xib */,
+			);
+			path = Restaurant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +194,7 @@
 				CE7A0C172C05BB130034C8C4 /* Assets.xcassets in Resources */,
 				CE7A0C232C05BC520034C8C4 /* SampleTableViewCell.xib in Resources */,
 				CE7A0C1A2C05BB130034C8C4 /* Base in Resources */,
+				CEEACF982C0717D9007F0700 /* RestaurantTableViewCell.xib in Resources */,
 				CE7A0C152C05BB120034C8C4 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,10 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEACF932C0716A7007F0700 /* Restaurant.swift in Sources */,
 				CE5623EE2C061A9B004054EA /* AdTableViewCell.swift in Sources */,
 				CE7A0C122C05BB120034C8C4 /* ViewController.swift in Sources */,
+				CEEACF972C0717D9007F0700 /* RestaurantTableViewCell.swift in Sources */,
 				CE7A0C242C05BC520034C8C4 /* SampleTableViewCell.swift in Sources */,
 				CE7A0C262C05BF760034C8C4 /* TravelModel.swift in Sources */,
+				CEEACF912C0714D0007F0700 /* RestaurantViewController.swift in Sources */,
 				CE7A0C0E2C05BB120034C8C4 /* AppDelegate.swift in Sources */,
 				CEEACF6D2C0707A6007F0700 /* AdViewController.swift in Sources */,
 				CE7A0C102C05BB120034C8C4 /* SceneDelegate.swift in Sources */,

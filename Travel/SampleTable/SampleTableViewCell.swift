@@ -45,15 +45,12 @@ class SampleTableViewCell: UITableViewCell {
     func configureCell(_ data: Travel) {
         
         contentLabel.text = data.title
-        
-            backgroundColor = .white
-            let url = URL(string: data.travel_image!)
-            posterImage.kf.setImage(with: url)
-            descLabel.text = data.description
-            gradeLabel.text = "\(data.grade!) | 저장 \(data.save!.formatted())"
-            
-        
-        
+        backgroundColor = .white
+        let url = URL(string: data.travel_image!)
+        posterImage.kf.setImage(with: url)
+        descLabel.text = data.description
+        gradeLabel.text = "\(data.grade!) | 저장 \(data.save!.formatted())"
+                    
     }
 }
     
