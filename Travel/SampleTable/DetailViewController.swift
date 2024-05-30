@@ -6,27 +6,39 @@
 //
 
 import UIKit
-
+import Kingfisher
 
 
 class DetailViewController: UIViewController {
 
     
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var popButton: UIButton!
+    var navTitle = ""
+    var image = ""
+    var desc = ""
+    var rating = ""
+    var saveCount = ""
+    var url = ""
     
+    @IBOutlet var posterImage: UIImageView!
+    @IBOutlet var descLabel: UILabel!
+    @IBOutlet var ratingLabel: UILabel!
+    @IBOutlet var saveLabel: UILabel!
+    
+    @IBOutlet var labelBg: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleLabel.text = "관광지 화면"
-        titleLabel.font = .systemFont(ofSize: 40, weight: .heavy)
-        popButton.setTitle("뒤로 가기", for: .normal)
-    }
+        navigationItem.title = navTitle
+        posterImage.kf.setImage(with: URL(string: url))
+        posterImage.contentMode = .scaleAspectFill
+        descLabel.text = desc
+        descLabel.numberOfLines = 3
+        descLabel.font = .boldSystemFont(ofSize: 20)
+        ratingLabel.text = rating
+        saveLabel.text = saveCount
+        labelBg.layer.borderWidth = 1
 
-    
-    @IBAction func popButtonClicked(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
     }
     
 }

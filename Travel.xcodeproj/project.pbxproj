@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE5623EE2C061A9B004054EA /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */; };
 		CE5623EF2C061A9B004054EA /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */; };
+		CE56EBCE2C087C1C00415A82 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56EBCD2C087C1C00415A82 /* MapViewController.swift */; };
 		CE7A0C0E2C05BB120034C8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C0D2C05BB120034C8C4 /* AppDelegate.swift */; };
 		CE7A0C102C05BB120034C8C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C0F2C05BB120034C8C4 /* SceneDelegate.swift */; };
 		CE7A0C122C05BB120034C8C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0C112C05BB120034C8C4 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		CE5623EC2C061A9B004054EA /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
 		CE5623ED2C061A9B004054EA /* AdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdTableViewCell.xib; sourceTree = "<group>"; };
+		CE56EBCD2C087C1C00415A82 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CE7A0C0A2C05BB120034C8C4 /* Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A0C0D2C05BB120034C8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7A0C0F2C05BB120034C8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEACF922C0716A7007F0700 /* Restaurant.swift */,
+				CE56EBCD2C087C1C00415A82 /* MapViewController.swift */,
 				CEEACF902C0714D0007F0700 /* RestaurantViewController.swift */,
 				CEEACF952C0717D9007F0700 /* RestaurantTableViewCell.swift */,
 				CEEACF962C0717D9007F0700 /* RestaurantTableViewCell.xib */,
@@ -213,6 +216,7 @@
 				CE7A0C242C05BC520034C8C4 /* SampleTableViewCell.swift in Sources */,
 				CE7A0C262C05BF760034C8C4 /* TravelModel.swift in Sources */,
 				CEEACF912C0714D0007F0700 /* RestaurantViewController.swift in Sources */,
+				CE56EBCE2C087C1C00415A82 /* MapViewController.swift in Sources */,
 				CE7A0C0E2C05BB120034C8C4 /* AppDelegate.swift in Sources */,
 				CEEACF6D2C0707A6007F0700 /* AdViewController.swift in Sources */,
 				CE7A0C102C05BB120034C8C4 /* SceneDelegate.swift in Sources */,

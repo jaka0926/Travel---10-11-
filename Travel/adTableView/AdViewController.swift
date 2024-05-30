@@ -12,14 +12,16 @@ class AdViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dismissButton: UIButton!
     
+    var adTitle = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleLabel.text = "광고 화면"
-        titleLabel.font = .systemFont(ofSize: 40, weight: .heavy)
+        titleLabel.text = adTitle
+        titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 5
+        titleLabel.font = .systemFont(ofSize: 25, weight: .heavy)
         dismissButton.setTitle("뒤로 가기", for: .normal)
-        
         
     }
     

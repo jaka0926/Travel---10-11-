@@ -70,12 +70,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = list[indexPath.row]
         
+        
         if data.ad == false {
             let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            
+            vc.navTitle = data.title
+            vc.url = data.travel_image!
+            vc.desc = data.description!
+            vc.rating = "평점: \(data.grade!)"
+            vc.saveCount = "저장수: \(data.save?.formatted() ?? "")"
+            
             navigationController?.pushViewController(vc, animated: true)
         }
         else {
             let vc = storyboard?.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
+            
+            vc.adTitle = data.title
+            
             present(vc, animated: true)
         }
         

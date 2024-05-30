@@ -17,6 +17,8 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet var koreanFoodButton: UIButton!
     @IBOutlet var cheapFoodButton: UIButton!
     
+    @IBOutlet var mapButton: UIButton!
+    
     var koreanFilterOn = false
     var cheapFilterOn = false
     
@@ -32,7 +34,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         cheapFoodButton.setTitle("만원 이하 음식", for: .normal)
         cheapFoodButton.tintColor = .black
         cheapFoodButton.layer.cornerRadius = 5
-        
+        mapButton.setTitle("지도 위치", for: .normal)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
