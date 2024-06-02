@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeW-6k-jCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3118" y="1068"/>
+            <point key="canvasLocation" x="3118" y="1024"/>
         </scene>
         <!--Ad View Controller-->
         <scene sceneID="hIl-Ki-mZa">
@@ -295,6 +295,59 @@
             </objects>
             <point key="canvasLocation" x="981" y="702"/>
         </scene>
+        <!--City View Controller-->
+        <scene sceneID="AOV-Ps-Ahb">
+            <objects>
+                <viewController storyboardIdentifier="CityViewController" id="r8y-Rk-vl6" customClass="CityViewController" customModule="Travel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QU1-tR-w0s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Olv-fz-nTu">
+                                <rect key="frame" x="16" y="167" width="361" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-eL-Zz0">
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="r8y-Rk-vl6" id="Vcr-6k-dLZ"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VPA-bh-0WN">
+                                <rect key="frame" x="0.0" y="206" width="393" height="563"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aRy-B6-UPD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yhl-eL-Zz0" firstAttribute="trailing" secondItem="aRy-B6-UPD" secondAttribute="trailing" id="4uv-1F-kT8"/>
+                            <constraint firstItem="yhl-eL-Zz0" firstAttribute="leading" secondItem="aRy-B6-UPD" secondAttribute="leading" id="9ui-4h-fD6"/>
+                            <constraint firstItem="Olv-fz-nTu" firstAttribute="leading" secondItem="aRy-B6-UPD" secondAttribute="leading" constant="16" id="AWy-1b-HUk"/>
+                            <constraint firstItem="yhl-eL-Zz0" firstAttribute="top" secondItem="aRy-B6-UPD" secondAttribute="top" id="IC5-qO-hvt"/>
+                            <constraint firstItem="aRy-B6-UPD" firstAttribute="bottom" secondItem="VPA-bh-0WN" secondAttribute="bottom" id="J8K-PM-H2A"/>
+                            <constraint firstItem="VPA-bh-0WN" firstAttribute="leading" secondItem="aRy-B6-UPD" secondAttribute="leading" id="ZZ7-sW-rQi"/>
+                            <constraint firstItem="aRy-B6-UPD" firstAttribute="trailing" secondItem="VPA-bh-0WN" secondAttribute="trailing" id="ceh-Uy-zas"/>
+                            <constraint firstItem="aRy-B6-UPD" firstAttribute="trailing" secondItem="Olv-fz-nTu" secondAttribute="trailing" constant="16" id="jk0-dS-koQ"/>
+                            <constraint firstItem="VPA-bh-0WN" firstAttribute="top" secondItem="Olv-fz-nTu" secondAttribute="bottom" constant="8" id="oTa-dU-66Q"/>
+                            <constraint firstItem="Olv-fz-nTu" firstAttribute="top" secondItem="yhl-eL-Zz0" secondAttribute="bottom" constant="8" id="vZy-DS-XEf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YGJ-CU-c9x"/>
+                    <connections>
+                        <outlet property="searchField" destination="yhl-eL-Zz0" id="DMq-vI-QTc"/>
+                        <outlet property="segmentControl" destination="Olv-fz-nTu" id="X90-eH-QVJ"/>
+                        <outlet property="tableView" destination="VPA-bh-0WN" id="Gmc-Ah-WHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AnJ-MN-B0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907.6335877862596" y="1414.7887323943662"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hm3-fv-8LD">
             <objects>
@@ -308,15 +361,36 @@
                     <connections>
                         <segue destination="GvN-5h-aQ2" kind="relationship" relationship="viewControllers" id="FW3-SK-vdl"/>
                         <segue destination="Wjk-AN-b5N" kind="relationship" relationship="viewControllers" id="aFL-Or-LpZ"/>
+                        <segue destination="aNI-7b-Fu7" kind="relationship" relationship="viewControllers" id="rfp-3A-j49"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ar4-Rh-64e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="47" y="328"/>
         </scene>
+        <!--도시-->
+        <scene sceneID="cks-pS-bf6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aNI-7b-Fu7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="도시" image="building.2.fill" catalog="system" id="g42-bn-ES8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rDa-5I-ZTe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r8y-Rk-vl6" kind="relationship" relationship="rootViewController" id="oI2-JT-9p4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Wg-87-dtS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980.91603053435108" y="1414.7887323943662"/>
+        </scene>
     </scenes>
     <resources>
         <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="building.2.fill" catalog="system" width="128" height="117"/>
         <image name="fork.knife.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -14,16 +14,6 @@ struct Travel {
     let save: Int?
     let like: Bool?
     let ad: Bool
-    
-//    var titleDescription: String {
-//        if let grade = grade, 
-//           let save = save {
-//            return "\(title)\n\(description!)\n\(grade) | \(save.formatted())명이 공감했습니다"
-//        }
-//        else {
-//            return title
-//        }
-//    }
 }
 
 struct TravelInfo {
