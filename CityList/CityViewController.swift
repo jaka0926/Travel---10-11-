@@ -44,27 +44,24 @@ class CityViewController: UIViewController {
     }
     
     @objc func searchButtonClicked() {
-            searchField.resignFirstResponder() // Dismiss the keyboard
-            performSearch()
-        }
+        searchField.resignFirstResponder() // Dismiss the keyboard
+        performSearch()
+    }
     
     @objc func performSearch() {
         
-        
-        if searchField.text!.isEmpty {
-            filterApplication()
-        }
-        else {
+        filterApplication()
+        if searchField.text != "" {
             var data: [City] = []
             for item in filteredList{
-                if "\(item.city_name)".contains(searchField.text!) || "\(item.city_english_name)".contains(searchField.text!) || "\(item.city_explain)".contains(searchField.text!) {
-                    print(searchField.text!)
+                if "\(item.city_name) \(item.city_english_name.lowercased()) \(item.city_explain) ".contains(searchField.text!.lowercased()) {
                     data.append(item)
                 }
             }
             filteredList = data
         }
     }
+    
     
     func segmentConfigure() {
         segmentControl.removeAllSegments()
@@ -78,11 +75,12 @@ class CityViewController: UIViewController {
     @objc func filterApplication() {
         
         let segIndex = segmentControl.selectedSegmentIndex
+        
         switch segIndex {
-        case 0: displayAll(); print("segment 0")
-        case 1: domesticFilter(); print("segment 1")
-        case 2: internationalFilter(); print("segment 2")
-        default: print("Switch Default")
+            case 0: displayAll()
+            case 1: domesticFilter()
+            case 2: internationalFilter()
+            default: print("Switch Default")
         }
         
     }
