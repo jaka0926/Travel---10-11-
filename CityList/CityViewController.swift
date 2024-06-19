@@ -62,7 +62,6 @@ class CityViewController: UIViewController {
         }
     }
     
-    
     func segmentConfigure() {
         segmentControl.removeAllSegments()
         segmentControl.insertSegment(withTitle: "모두", at: 0, animated: true)
